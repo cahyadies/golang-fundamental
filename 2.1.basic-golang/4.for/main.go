@@ -19,7 +19,11 @@ func main() {
 	//for each
 	title := "Golang the best language"
 
-	for index, letter := range title {
-		fmt.Println("Index :", index, "Letter :", string(letter))
+	// for index, letter := range title {
+	// 	fmt.Println("Index :", index, "Letter :", string(letter))
+	// }
+	// _ -> variable penampung, jika variable tidak dipakai
+	for _, letter := range title {
+		fmt.Println("Letter :", string(letter))
 	}
 }
